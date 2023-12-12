@@ -7,6 +7,6 @@ project = {
     ]
 }
 
-print("Employee Emails")
+print("Employee Emails -->")
 for i in project['Employee']:
     print(i['Email'])
