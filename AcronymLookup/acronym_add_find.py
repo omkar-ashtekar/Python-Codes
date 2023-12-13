@@ -26,11 +26,11 @@ def add_acronym():
 
 
 def main():
-    option = input('Do you want to "Add" or "Search"?\n')
+    option = input('Do you want to "Add" or "Search"?\n').lower()
 
-    if option == "Add" or option == "add":
+    if option == "add":
         add_acronym()
-    elif option == "Search" or option == "search":
+    elif option == "search":
         find_acronym()
     else:
         print('Choose "Add" or "Search"')
