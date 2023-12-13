@@ -14,12 +14,12 @@ for month in range(months):
     moneyOwed = moneyOwed + interest_paid
 
     if(moneyOwed - payment < 0):
-        print("The last payment is", moneyOwed)
+        print(f"The last payment is {moneyOwed:,.2f}")
         print("You paid off the loan in", month+1, "months")
         break
 
     # Make Payment
     moneyOwed = moneyOwed - payment
 
-    print("You paid", payment, "of which", interest_paid, "was interest", end=" ")
-    print("Now you owe", moneyOwed)
+    print(f"On {month+1} month You paid {payment:,.2f} of which {interest_paid:,.2f} was interest", end=" ")
+    print(f"Now you owe {moneyOwed:,.2f}")
